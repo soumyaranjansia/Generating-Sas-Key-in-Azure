@@ -19,7 +19,7 @@ namespace sas_project.Controllers
           
             string accountName = "Account Name";
             string accountKey = "Account Key";
-            string containername = "content";
+            string containername = "containername";
             //adding expire time after 1 minutes from now
             var offset = TimeSpan.FromMinutes(1);
             BlobSasBuilder sasbuilder = new BlobSasBuilder()
@@ -39,7 +39,7 @@ namespace sas_project.Controllers
 
 
 
-            //Alternate Way Of generating Sas Token
+            //Alternate Way Of generating Sas Token without azure storage nuget package
 
             container reource uri
             string resourceUri = "your container base url";
